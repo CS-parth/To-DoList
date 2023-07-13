@@ -1,0 +1,24 @@
+<!-- Code related to EJS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-DoList</title>
+</head>
+<body>
+    <div calss="box">
+        <h1>ToDo List</h1>
+    </div>
+
+    <div class="box">
+        <% for(var i=0; i< list.length; i++){ %>
+            <p><%= list[i] %></p>
+        <%}%>
+    <form action="/" method="post">
+        <input type="text" name="task" placeholder="Enter the task">
+        <button type="submit">+</button>
+    </form>
+    </div>
+</body>
+</html>
