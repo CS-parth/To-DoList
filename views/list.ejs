@@ -5,20 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-DoList</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <div calss="box">
+    <div class="box">
         <h1>ToDo List</h1>
     </div>
 
     <div class="box">
         <% for(var i=0; i< list.length; i++){ %>
-            <p><%= list[i] %></p>
+            <%if(list[i].name){%>
+                <div class="special">
+                    <input type="checkbox">
+                    <p><%= list[i].name %></p>
+                </div>
+            <%}%>
         <%}%>
     <form action="/" method="post">
         <input type="text" name="task" placeholder="Enter the task">
-        <button type="submit">+</button>
+        <button type="submit"><ion-icon name="add-outline"></ion-icon>
+        </button>
     </form>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

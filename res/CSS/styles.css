@@ -1,0 +1,92 @@
+/* Styles for the todo list */
+*{
+  box-sizing: border-box;
+}
+body {
+    background-image: url(/IMG/hero-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    font-family: Arial, sans-serif;
+    /* background-color: #f2f2f2; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .box {
+    display: block;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 500px;
+  }
+  
+
+  h1 {
+    color: red;
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Rubic+dirt',sans-serif !important;
+  }
+  
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+
+  form {
+    margin-top: 20px;
+    width: 300px;
+    margin: 20px auto;
+  }
+  
+  input[type="text"] {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
+  
+  button {
+    background: linear-gradient(90deg, #FF6B6B, #FFE66D);
+    padding: 17px;
+    /* color: #fff; */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button .ion-icon{
+    color: #333;
+  }
+  .box p {
+    margin: 0;
+  }
+  .special{
+    display: flex;
+  }
+  .special p{
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .special input[type="checkbox"]{
+    padding: 15px;
+  }
+  .special p::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: lightgray;
+    margin: 10px 0 10px 0;
+  }
