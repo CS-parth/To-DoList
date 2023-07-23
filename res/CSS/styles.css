@@ -50,14 +50,15 @@ body {
   }
   
   input[type="text"] {
-    width: 200px;
-    padding: 20px;
+    width: 290px;
+    padding: 14px;
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-right: 5px;
+    font-size: 20px;
   }
   
-  button {
+  .plus-btn {
     background: linear-gradient(90deg, #FF6B6B, #FFE66D);
     padding: 17px;
     /* color: #fff; */
@@ -66,7 +67,7 @@ body {
     cursor: pointer;
   }
   
-  button .ion-icon{
+  .plus-btn .ion-icon{
     color: #333;
   }
   .box p {
@@ -74,13 +75,13 @@ body {
   }
   .special{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
   }
   .special p{
     margin-left: 10px;
     font-size: 25px;
-  }
-  .special input[type="checkbox"]{
-    padding: 15px;
   }
   .special p::after {
     content: "";
@@ -88,5 +89,26 @@ body {
     width: 300px;
     height: 1px;
     background-color: lightgray;
-    margin: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
+  }
+  .special .ion-icon{
+      height: 16px;
+      width: 16px;
+  }
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .delete-btn{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+  }
+  .ion-icon svg .ionicon .s-ion-icon{
+    height: 16px !important;
+    width: 16px !important;
   }

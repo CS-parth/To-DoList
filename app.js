@@ -33,6 +33,12 @@ app.post("/",(req,res)=>{
     res.redirect('/');
 })
 
+app.post("/delete",async (req,res)=>{
+    const id = req.body.btn;
+    const result = await items.findByIdAndDelete(id);
+    console.log(result)
+    res.redirect("/");
+})
 
 app.listen(4500,()=>{
     console.log("Server Started");

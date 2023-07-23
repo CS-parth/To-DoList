@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="box">
-        <h1>ToDo List</h1>
+        <h1>To-Do List</h1>
     </div>
 
     <div class="box">
@@ -21,12 +21,17 @@
                 <div class="special">
                     <input type="checkbox">
                     <p><%= list[i].name %></p>
+                    <form action="/delete" method="post">
+
+                            <button class="delete-btn" name="btn" type="submit" value="<%= list[i]._id %>"><ion-icon name="trash-outline"></ion-icon></button>
+
+                    </form>
                 </div>
             <%}%>
         <%}%>
     <form action="/" method="post">
         <input type="text" name="task" placeholder="Enter the task">
-        <button type="submit"><ion-icon name="add-outline"></ion-icon>
+        <button class="plus-btn" type="submit"><ion-icon name="add-outline"></ion-icon>
         </button>
     </form>
     </div>
